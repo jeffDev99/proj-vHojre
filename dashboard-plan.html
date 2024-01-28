@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./wwwroot/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/normalize.css">
+    <link rel="stylesheet" href="./wwwroot/css/styleDashboard.css">
+    <title>خرید حجره جدید</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row ">
+            <!--side bar-->
+            <aside class="col-12 col-lg-2 bg-red text-white ">
+                <div class="dashboard-aside">
+                    <div class="dashboard-aside-header d-flex justify-content-between justify-content-lg-center px-4 py-3">
+                        <img src="wwwroot/img/menu-1.svg" class="dashboard-aside-header__open-icon pe-3 d-lg-none">
+                        <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                        <span>
+                        </span>
+                    </div>
+                    <nav class="dashboard-aside-nav">
+                        <div class="dashboard-aside-header-responsive d-flex align-items-center d-lg-none justify-content-between px-4 py-3">
+                            <img src="wwwroot/img/close.svg" class="dashboard-aside-header-responsive__close-btn pe-3 d-lg-none">
+                            <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                            <span></span>
+                        </div>
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/category-2.svg" class="icon-image">
+                                <li class="item-dashboard">داشبورد</li>
+                            </a>
+                            <a href="#" class="linkToPage linkToPage--acitve px-4 py-3"><img src="wwwroot/img/shop-add.svg" class="icon-image">
+                                <li class="item-dashboard">خرید حجره جدید</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop.svg" class="icon-image">
+                                <li class="item-dashboard">مدیریت حجره</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/chart-2.svg" class="icon-image">
+                                <li class="item-dashboard">آمار و گزارشات</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3 "><img src="wwwroot/img/Profile.svg" class="icon-image">
+                                <li class="item-dashboard item-dashboard-5">حساب کاربری</li>
+                            </a>
+                        </ul>
+                        <hr class="style-line">
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/headphone.svg" class="icon-image">
+                                <li class="item-dashboard">پشتیبانی</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/logout.svg" class="icon-image">
+                                <li class="item-dashboard">خروج</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <!--main-->
+            <div class="col-12 col-lg-10 bg-gray">
+                <!--main header-->
+                <header class="row main-header">
+                    <div class="col-12 col-md-8"></div>
+                    <div class="col-12 col-md-4">
+                        <div class="main-header__left d-flex align-items-center flex-row-reverse justify-content-evenly">
+                            <figure class="main-header__avatar m-0">
+                                <img src="./wwwroot/img/avatar.webp" alt="main header icon" class="main-header__icon-img header-image">
+                            </figure>
+                            <span class="main-header__tel">+98 912 345789</span>
+                            <figure class="main-header__icon-wrapper m-0">
+                                <img src="./wwwroot/img/notification.svg" class="main-header__icon" alt="notification icon">
+                            </figure>
+                            <figure class="main-header__icon-wrapper main-header-space m-0">
+                                <img src="./wwwroot/img/search-normal-1.svg" class="main-header__icon" alt="search icon">
+                            </figure>
+                        </div>
+                    </div>
+                </header>
+                <!--main body-->
+                <main class="row main-body">
+                    <!--select avatar-->
+                    <section class="section-box  d-flex flex-wrap justify-content-center justify-content-lg-between">
+                        <h2 class="sec-title flex-grow-1 w-100">انتخاب پلن نمایشگاه وی حجره</h2>
+                        <!-- table desktop -->
+                        <div class="container-fluid d-none d-md-block">
+                            <div class="row ">
+                                <div class="col-md-2 plan-col"></div>
+                                <div class="col-md-3 plan-col"></div>
+                                <div class="col-md-3 plan-col plan-header-special">
+                                    <div class="plan-table-cell">پلن ویژه</div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col no-bg"></div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-header">
+                                        <p class="plan-header__title">تک ستاره</p>
+                                        <p class="plan-header__price" dir="rtl">
+                                            400 هزار تومان
+                                        </p>
+                                        <p class="plan-header__time">مدت اعتبار :<time> 1400/ 12/ 20</time></p>
+                                        <button type="button" class="btn-cus btn-cus__gold ">انتخاب پلن</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell">
+                                        <div class="plan-header">
+                                            <p class="plan-header__title">دو ستاره</p>
+                                            <p class="plan-header__price" dir="rtl">
+                                                <del class="plan-header__old-price">1.5</del>
+                                                <span class="plan-header__new-price"> 1 میلیون تومان</span>
+                                            </p>
+                                            <p class="plan-header__time">مدت اعتبار :<time> 1400/ 12/ 20</time></p>
+                                            <button type="button" class="btn-cus btn-cus__gold ">انتخاب پلن</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-header">
+                                        <p class="plan-header__title">سه ستاره</p>
+                                        <p class="plan-header__price" dir="rtl">
+                                            <del class="plan-header__old-price">3.5</del>
+                                            <span class="plan-header__new-price"> 2.5 میلیون تومان</span>
+                                        </p>
+                                        <p class="plan-header__time">مدت اعتبار :<time> 1400/ 12/ 20</time></p>
+                                        <button type="button" class="btn-cus btn-cus__gold">انتخاب پلن</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col plan-BRTR">
+                                    <div class="plan-title">
+                                        استند هوایی
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 200 کیلوبایت)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        استند زمینی
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 300 کیلوبایت)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col">4</div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        تیزر
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col">4</div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        بروشور
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col">4</div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        لوگو
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        شبکه های اجتماعی
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        آدرس وب سایت
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        محصولات
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        گالری محصول
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        پخش صوت در حجره
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                            <div class="row plan-row">
+                                <div class="col-md-2 plan-col ">
+                                    <div class="plan-title">
+                                        پخش صوت در حجره
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 plan-col">
+                                    <div class="plan-table-cell"></div>
+                                </div>
+                                <div class="col-md-3 plan-col"></div>
+                            </div>
+                        </div>
+                        <!-- table mobile -->
+                        <div class="d-block d-md-none">
+                            <div class="row plan-row-mobile">
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-header">
+                                        <p class="plan-header__title">تک ستاره</p>
+                                        <p class="plan-header__price" dir="rtl">
+                                            400 هزار تومان
+                                        </p>
+                                        <p class="plan-header__time">مدت اعتبار :<time> 1400/ 12/ 20</time></p>
+                                        <button type="button" class="btn-cus btn-cus__gold ">انتخاب پلن</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        استند هوایی
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 200 کیلوبایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        استند زمینی
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 300 کیلوبایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        تیزر
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        بروشور
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        لوگو
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        شبکه های اجتماعی
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        آدرس وب سایت
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        محصولات
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        گالری محصول
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        پخش صوت در حجره
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row plan-row-mobile plan-row-mobile__recomended">
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-header">
+                                        <p class="plan-header__title">دو ستاره</p>
+                                        <p class="plan-header__price" dir="rtl">
+                                            <del class="plan-header__old-price">1.5</del>
+                                            <span class="plan-header__new-price"> 1 میلیون تومان</span>
+                                        </p>
+                                        <p class="plan-header__time">مدت اعتبار :<time> 1400/ 12/ 20</time></p>
+                                        <button type="button" class="btn-cus btn-cus__gold ">انتخاب پلن</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        استند هوایی
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 200 کیلوبایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        استند زمینی
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 300 کیلوبایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        تیزر
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        بروشور
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        لوگو
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        شبکه های اجتماعی
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        آدرس وب سایت
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        محصولات
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        گالری محصول
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        پخش صوت در حجره
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row plan-row-mobile ">
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-header">
+                                        <p class="plan-header__title">سه ستاره</p>
+                                        <p class="plan-header__price" dir="rtl">
+                                            <del class="plan-header__old-price">3.5</del>
+                                            <span class="plan-header__new-price"> 2.5 میلیون تومان</span>
+                                        </p>
+                                        <p class="plan-header__time">مدت اعتبار :<time> 1400/ 12/ 20</time></p>
+                                        <button type="button" class="btn-cus btn-cus__gold">انتخاب پلن</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        استند هوایی
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 200 کیلوبایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        استند زمینی
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 300 کیلوبایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">2 عدد</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        تیزر
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        بروشور
+                                        <span class="plan-table-cell__tagline">(محدودیت حجم 10 مگابایت)</span>
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <span class="plan-table-cell__number">1 دقیقه </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        لوگو
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        شبکه های اجتماعی
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        آدرس وب سایت
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        محصولات
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        گالری محصول
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 plan-col">
+                                    <div class="plan-title">
+                                        پخش صوت در حجره
+                                    </div>
+                                    <div class="plan-table-cell__content">
+                                        <img src="./wwwroot/img/vuesax-linear-tick-circle.svg" alt="tick">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="wwwroot/js/script-dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./wwwroot/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/normalize.css">
+    <link rel="stylesheet" href="./wwwroot/css/spectrum.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/styleDashboard.css">
+    <title>مدیریت حجره - مشخصات</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--side bar-->
+            <aside class="col-12 col-lg-2 bg-red text-white ">
+                <div class="dashboard-aside">
+                    <div
+                        class="dashboard-aside-header d-flex justify-content-between justify-content-lg-center px-4 py-3">
+                        <img src="wwwroot/img/menu-1.svg" class="dashboard-aside-header__open-icon pe-3 d-lg-none">
+                        <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                        <span>
+                        </span>
+                    </div>
+                    <nav class="dashboard-aside-nav">
+                        <div
+                            class="dashboard-aside-header-responsive d-flex align-items-center d-lg-none justify-content-between px-4 py-3">
+                            <img src="wwwroot/img/close.svg"
+                                class="dashboard-aside-header-responsive__close-btn pe-3 d-lg-none">
+                            <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                            <span></span>
+                        </div>
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/category-2.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">داشبورد</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop-add.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">ساخت حجره جدید</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop.svg" class="icon-image">
+                                <li class="item-dashboard">مدیریت حجره</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/chart-2.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">آمار و گزارشات</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3 linkToPage--acitve"><img
+                                    src="wwwroot/img/Profile.svg" class="icon-image">
+                                <li class="item-dashboard item-dashboard-5">حساب کاربری</li>
+                            </a>
+                        </ul>
+                        <hr class="style-line">
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/headphone.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">پشتیبانی</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/logout.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">خروج</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <!--main-->
+            <div class="col-12 col-lg-10">
+                <!--main header-->
+                <header class="row main-header">
+                    <div class="col-12 col-md-8"></div>
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="main-header__left d-flex align-items-center flex-row-reverse justify-content-evenly">
+                            <figure class="main-header__avatar m-0">
+                                <img src="./wwwroot/img/avatar.webp" alt="main header icon"
+                                    class="main-header__icon-img header-image">
+                            </figure>
+                            <span class="main-header__tel">+98 912 345789</span>
+                            <figure class="main-header__icon-wrapper m-0">
+                                <img src="./wwwroot/img/notification.svg" class="main-header__icon"
+                                    alt="notification icon">
+                            </figure>
+                            <figure class="main-header__icon-wrapper main-header-space m-0">
+                                <img src="./wwwroot/img/search-normal-1.svg" class="main-header__icon"
+                                    alt="search icon">
+                            </figure>
+                        </div>
+                    </div>
+                </header>
+                <!--main info-->
+                <main class="row main-body">
+                    <section class="manage-exh">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link  d-flex align-items-center active" id="nav-home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#base-info" type="button" role="tab"
+                                    aria-controls="nav-home" aria-selected="true">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/information-star.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">مشخصات</span>
+                                </button>
+                                <button class="nav-link d-flex align-items-center" id="nav-profile-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                                    aria-controls="nav-profile" aria-selected="false">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/gallery.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">تصاویر</span>
+                                </button>
+                                <button class="nav-link d-flex align-items-center" id="nav-contact-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                                    aria-controls="nav-contact" aria-selected="false">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/toggle-off-circle.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">وضعیت محصول</span>
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active py-4" id="base-info" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <!--form-->
+                                <form action="#" method="POST" class="row form mb-3">
+                                    <div class="col-12 col-md-3 offset-md-9" id="formItemWrapper">
+                                        <div class="form__item mb-3">
+                                            <select id="gender" name="gender" class="form__input" required
+                                                spellcheck="false">
+                                                <option value="null">انتخاب خدمت</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3" id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">نام محصول به فارسی</span>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 offset-md-4 mb-3" id="formItemWrapper">
+                                        <div class="form__item">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">نام محصول به انگلیسی</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-12 mb-3" id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <textarea class="form__input w-100" rows="5"
+                                                placeholder="توضیحات محصول"></textarea>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon" id="formMessage">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-3 mb-3 " id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">قیمت</span>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-12 col-md-3 offset-md-6 mb-5" id="formItemWrapper">
+                                        <div class="form__item mb-3" id="formItemWrapper">
+                                            <input type="text" class="form__input " name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">مقدار تخفیف</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-5" id="formItemWrapper">
+                                        <h4 class="edit-product__title">سایزبندی</h4>
+                                        <p class="edit-product__tagline">درصورتی که محصول شما دارای سایزبندی می باشد
+                                            انواع سایز را وارد نمایید</p>
+                                        <div class="form__item d-flex mb-3" id="formItemWrapper">
+                                            <input type="text" class="form__input form__input--group"
+                                                name="frmEditProductSize" id="frmEditProductSize" required
+                                                spellcheck="false">
+                                            <span class="form__placeholder">سایزبندی</span>
+                                            <input type="button" class="form__input--group-btn" value="افزودن"
+                                                onclick="addSize()">
+                                        </div>
+
+                                        <div id="myList3" class="filter-head myList3">
+                                            <div hidden class="filter-head__item"><span></span> &nbsp; &nbsp; <i
+                                                    class="fa fa-times" onclick="rmv(this)"></i></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-5" id="formItemWrapper">
+                                        <h4 class="edit-product__title">رنگ بندی</h4>
+                                        <p class="edit-product__tagline">درصورتی که محصول شما دارای رنگبندی می باشد
+                                            انواع رنگ مورد نظر را انتخاب نمایید</p>
+
+                                        <a class="dashboard__btn dashboard__btn--green a-cus px-4 py-2 d-table"
+                                            href="rasteModal.html" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            <img src="./wwwroot/img/vuesax-linear-add-square.svg">
+                                            افزودن رنگ جدید
+                                        </a>
+
+                                        <div id="myList2" class="filter-head myList2">
+                                            <div hidden class="filter-head__item"><span></span> &nbsp; &nbsp; <i
+                                                    class="fa fa-times" onclick="rmv(this)"></i></div>
+
+                                        </div>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-color-picker">
+                                                <div class="modal-content">
+                                                    <div class="modal-header justify-content-center">
+                                                        <h5 class="modal-header__title " id="exampleModalLabel">
+                                                            انتخاب رنگ
+                                                        </h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <input type='text' id="flat" value="red" />
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div id="pickedColor" class="picked-color"></div>
+
+                                                                <form action="" method="post">
+                                                                    <div class="form__item mt-4">
+                                                                        <input type="text" class="form__input"
+                                                                            name="colorName" id="colorName" required
+                                                                            spellcheck="false">
+                                                                        <span class="form__placeholder">نام محصول به
+                                                                            فارسی</span>
+                                                                    </div>
+                                                                    <p class="form-message" id="formMessage">
+                                                                        <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                                            class="form-message__icon">
+                                                                        <span class="form-message__text">
+                                                                            برای تشخیص بهتر رنگ توسط کاربر نام رنگ را
+                                                                            نیز وارد نمایید
+                                                                        </span>
+                                                                    </p>
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-between">
+                                                                        <input type="button" value="لغو"
+                                                                            class="color-picker-reset"
+                                                                            id="colorPickerReset"
+                                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                                        <input type="button" value="تایید"
+                                                                            class="color-picker-submit"
+                                                                            id="colorPickerSubmit" onclick="addColor()">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-end">
+                                            <input type="submit"
+                                                class="dashboard__btn dashboard__btn--green dashboard__btn--hover m-0"
+                                                value="ثبت تغییرات" id="formBtnSubmit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <div class="product">
+                                    <div class="row">
+                                        <div class="col-md-6  col-xs-12">
+                                            <div class="product-right">
+
+                                                <span class="product-right_title">
+                                                    تصویر اصلی
+                                                </span>
+
+                                                <div class="product-right_picture">
+                                                    <div class="product-right_picture_img">
+                                                        <img src="wwwroot/img/resid.jpg" alt=""
+                                                            class="product-right_picture__img1 mb-4 mb-md-0" />
+                                                    </div>
+                                                    <div class="product-right_picture__list">
+                                                        <p class="product-right_picture__text">انواع محصولات ایوان</p>
+                                                        <ul class="product__list">
+                                                            <li class="product__list__item">
+                                                                <a class="product__list__link" href="#"> <img
+                                                                        src="wwwroot/img/edit.png" alt="" /></a>
+                                                            </li>
+                                                            <li class="product__list__item">
+                                                                <a class="product__list__link" href="#"><img
+                                                                        src="wwwroot/img/trash.png" alt="" /></a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12">
+                                            <div class="product-left">
+                                                <span class="product-left_title">
+                                                    سایر تصاویر محصول
+                                                </span>
+                                                <div class="product-left_box1">
+                                                    <div>
+                                                        <img class="product-left_box1__img" src="wwwroot/img/resid.jpg"
+                                                            alt="">
+                                                        <span class="product-left_box1__text"> فروشگاه ایوان </span>
+                                                    </div>
+                                                    <ul class="product__list">
+                                                        <li class="product__list__item">
+                                                            <a class="product__list__link" href="#"> <img
+                                                                    src="wwwroot/img/edit.png" alt="" /></a>
+                                                        </li>
+                                                        <li class="product__list__item">
+                                                            <a class="product__list__link" href="#"><img
+                                                                    src="wwwroot/img/trash.png" alt="" /></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-left_box2">
+                                                    <a class="product__list__link" href="#"><img
+                                                            src="wwwroot/img/Upload.png" alt="" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">...</div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./wwwroot/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./wwwroot/js/spectrum.min.js"></script>
+    <script src="wwwroot/js/script-dashboard.js"></script>
+    <script>
+
+        //form validation (main info page)
+        // let formItemWrapperEl = document.querySelectorAll("#formItemWrapper");
+        // let formInputElPub = document.querySelectorAll(".form__input");
+        // let formInputSubmit = document.querySelector("#formBtnSubmit");
+        // formInputSubmit.addEventListener("click", function (e) {
+        //     e.preventDefault();
+        //     formItemWrapperEl.forEach(element => {
+        //         let formInputEl = element.querySelector(".form__input");
+        //         let formMessageEl = element.querySelector("#formMessage");
+        //         let formMessageEmpEl = element.querySelector("#formMessageEmp");
+        //         if (formInputEl.value == "") {
+        //             formMessageEl.style.display = "none";
+        //             formMessageEmpEl.style.display = "block";
+        //             formInputEl.style.borderColor = "#ed4b9e";
+        //         }
+        //     });
+        // });
+        // formItemWrapperEl.forEach(element => {
+        //     let formInputEl = element.querySelector(".form__input");
+        //     let formMessageEl = element.querySelector("#formMessage");
+        //     let formMessageEmpEl = element.querySelector("#formMessageEmp");
+        //     formInputEl.addEventListener("keydown", function () {
+        //         this.style.borderColor = "#ebebec";
+        //         formMessageEmpEl.style.display = "none";
+        //     })
+        // })
+
+        // color picker
+        $("#flat").spectrum({
+            color: "yellow",
+            type: "flat",
+            showPalette: false,
+            showAlpha: false,
+            showButtons: false,
+            allowEmpty: false,
+            move: function (color) {
+                color.toHexString(); // #ff0000
+            }
+        });
+        $("#pickedColor").css("background-color", "#c72222");
+        $("#flat").on('move.spectrum', function (e, tinycolor) {
+            $("#pickedColor").css("background-color", tinycolor.toHexString())
+        });
+
+        // add color item into edit product page
+        function addColor() {
+            var itm = document.querySelector("#myList2").lastElementChild;
+            var cln = itm.cloneNode(true);
+            cln.firstChild.innerHTML = document.querySelector("#colorName").value;
+            cln.firstChild.parentElement.style.filter = "alpha(opacity=50)";
+            cln.firstChild.parentElement.style.borderColor = pickedColor.style.backgroundColor;
+            cln.firstChild.parentElement.style.color = pickedColor.style.backgroundColor;
+            cln.hidden = false;
+            console.log(cln.firstChild.innerHTML);
+            if (document.querySelector("#colorName").value !== "") {
+                document.querySelector("#myList2").appendChild(cln);
+            }
+        }
+        function addSize() {
+            var itm = document.querySelector("#myList3").lastElementChild;
+            var cln = itm.cloneNode(true);
+            cln.firstChild.innerHTML = document.querySelector("#frmEditProductSize").value;
+            cln.hidden = false;
+            console.log(cln.firstChild.innerHTML);
+            if (document.querySelector("#frmEditProductSize").value !== "") {
+                document.querySelector("#myList3").appendChild(cln);
+            }
+        }
+        function rmv(el) {
+            var element = el;
+            var p = element.parentElement;
+            p.remove();
+        }
+    </script>
+</body>
+
+</html>

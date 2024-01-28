@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./wwwroot/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/normalize.css">
+    <link rel="stylesheet" href="./wwwroot/css/styleDashboard.css">
+    <title>مدیریت حجره - اطلاعات پایه</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--side bar-->
+            <aside class="col-12 col-lg-2 bg-red text-white ">
+                <div class="dashboard-aside">
+                    <div
+                        class="dashboard-aside-header d-flex justify-content-between justify-content-lg-center px-4 py-3">
+                        <img src="wwwroot/img/menu-1.svg" class="dashboard-aside-header__open-icon pe-3 d-lg-none">
+                        <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                        <span>
+                        </span>
+                    </div>
+                    <nav class="dashboard-aside-nav">
+                        <div
+                            class="dashboard-aside-header-responsive d-flex align-items-center d-lg-none justify-content-between px-4 py-3">
+                            <img src="wwwroot/img/close.svg"
+                                class="dashboard-aside-header-responsive__close-btn pe-3 d-lg-none">
+                            <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                            <span></span>
+                        </div>
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/category-2.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">داشبورد</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop-add.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">ساخت حجره جدید</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop.svg" class="icon-image">
+                                <li class="item-dashboard">مدیریت حجره</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/chart-2.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">آمار و گزارشات</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3 linkToPage--acitve"><img
+                                    src="wwwroot/img/Profile.svg" class="icon-image">
+                                <li class="item-dashboard item-dashboard-5">حساب کاربری</li>
+                            </a>
+                        </ul>
+                        <hr class="style-line">
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/headphone.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">پشتیبانی</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/logout.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">خروج</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <!--main-->
+            <div class="col-12 col-lg-10">
+                <!--main header-->
+                <header class="row main-header">
+                    <div class="col-12 col-md-8"></div>
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="main-header__left d-flex align-items-center flex-row-reverse justify-content-evenly">
+                            <figure class="main-header__avatar m-0">
+                                <img src="./wwwroot/img/avatar.webp" alt="main header icon"
+                                    class="main-header__icon-img header-image">
+                            </figure>
+                            <span class="main-header__tel">+98 912 345789</span>
+                            <figure class="main-header__icon-wrapper m-0">
+                                <img src="./wwwroot/img/notification.svg" class="main-header__icon"
+                                    alt="notification icon">
+                            </figure>
+                            <figure class="main-header__icon-wrapper main-header-space m-0">
+                                <img src="./wwwroot/img/search-normal-1.svg" class="main-header__icon"
+                                    alt="search icon">
+                            </figure>
+                        </div>
+                    </div>
+                </header>
+                <!--main info-->
+                <main class="row main-body">
+                    <section class="manage-exh">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link  d-flex align-items-center active" id="nav-home-tab"
+                                    data-bs-toggle="tab" data-bs-target="#base-info" type="button" role="tab"
+                                    aria-controls="nav-home" aria-selected="true">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/vuesax-linear-shop.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">اطلاعات پایه</span>
+                                </button>
+                                <button class="nav-link d-flex align-items-center" id="nav-profile-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab"
+                                    aria-controls="nav-profile" aria-selected="false">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/vuesax-linear-folder-2.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">فایل ها</span>
+                                </button>
+                                <button class="nav-link d-flex align-items-center" id="nav-contact-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                                    aria-controls="nav-contact" aria-selected="false">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/vuesax-linear-hashtag.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">برچسب ها</span>
+                                </button>
+                                <button class="nav-link d-flex align-items-center" id="nav-contact-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                                    aria-controls="nav-contact" aria-selected="false">
+                                    <figure class="m-0 nav-home-tab__img-wrapper">
+                                        <img src="./wwwroot/img/vuesax-linear-3-dcube.svg" class="nav-home-tab__img">
+                                    </figure>
+                                    <span class="nav-home-tab__text">محصولات</span>
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active py-4" id="base-info" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <!--form-->
+                                <form action="#" method="POST" class="row form mb-3">
+                                    <div class="col-12 col-md-3 mb-3" id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">نام کسب و کار</span>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3 " id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">آدرس کسب و کار</span>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-3 mb-3 " id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">کدپستی کسب و کار</span>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-9 mb-3" id="formItemWrapper">
+                                        <div class="form__item ">
+                                            <textarea class="form__input w-100" rows="5"
+                                                placeholder="توضیحات کسب و کار"></textarea>
+                                        </div>
+                                        <p class="form-message" id="formMessage">
+                                            <img src="./wwwroot/img/vuesax_linear_info-circle.svg"
+                                                class="form-message__icon" id="formMessage">
+                                            <span class="form-message__text">وارد کردن این بخش ضروریه</span>
+                                        </p>
+                                        <p class="form-message form-message-emp" id="formMessageEmp">
+                                            <img src="./wwwroot/img/vuesax_linear_danger.svg"
+                                                class="form-message__icon">
+                                            <span class="form-message__text form-message__text--red">این جارو فراموشی
+                                                کردی</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-md-3"></div>
+                                    <div class="col-12 col-md-3 " id="formItemWrapper">
+                                        <div class="form__item mb-3" id="formItemWrapper">
+                                            <input type="text" class="form__input " name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">نام مدیر عامل</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 " id="formItemWrapper">
+                                        <div class="form__item mb-3">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">سال تاسیس کسب و کار</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 " id="formItemWrapper">
+                                        <div class="form__item mb-3">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">تعداد نیروی شاغل</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 mb-3" id="formItemWrapper">
+                                        <div class="form__item">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder">سرمایه اولیه</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 " id="formItemWrapper">
+                                        <div class="form__item mb-3">
+                                            <select id="gender" name="gender" class="form__input" required
+                                                spellcheck="false">
+                                                <option class="form-select-op" value="null">انتخاب راسته</option>
+                                            </select>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <div></div>
+                                                            <h5 class="modal-header__title" id="exampleModalLabel">
+                                                                ویکی حجره
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p class="modal-body__text">راسته: یا گذرگاه اصلی و فرعی
+                                                                بازار، مسیری نسبتا طولانی
+                                                                است که در
+                                                                دو طرف آن دکان و فروشگاه ها به پیوسته و قرار دارند. از
+                                                                خصوصیات
+                                                                مهم راسته ها قرار نگرفتن واحد های مسکونی در میان آن
+                                                                هاست. راسته
+                                                                ی اصلی، به راسته های فرعی و سپس به کوچه هایی که واحد
+                                                                مسکونی در
+                                                                آن قرار داشت می رسید.<br>
+                                                                ما در وی حجره نیز برای دسته بندی کردن حجره ها در بخش های
+                                                                مختلف از
+                                                                راسته های مختلف استفاده می کنیم.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a class="raste__text" href="rasteModal.html" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    اگه نمیدونی راسته چیه
+                                                    اینجا کلیک کن
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="mainInfo__title">فضای مجازی</h4>
+                                    <div class="col-12 col-md-3 ">
+                                        <div class="form__item mb-3" id="socialFormItem">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false" onfocus="changePic(instaImg,'insta.svg')"
+                                                onfocusout="changePic(instaImg,'InstagramB&W.svg')">
+                                            <span class="form__placeholder"><img class="mainInfo__call"
+                                                    src="wwwroot/img/InstagramB&W.svg" id="instaImg" />اینستاگرام</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 ">
+                                        <div class="form__item mb-3" id="socialFormItem">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false" onfocus="changePic(telImg,'telegram.svg')"
+                                                onfocusout="changePic(telImg,'TelegramB&W.svg')">
+                                            <span class="form__placeholder"><img class="mainInfo__call"
+                                                    src="wwwroot/img/TelegramB&W.svg" id="telImg" />تلگرام</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 ">
+                                        <div class="form__item mb-3" id="socialFormItem">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false" onfocus="changePic(webImg,'website.svg')"
+                                                onfocusout="changePic(webImg,'WebsiteB&W.svg')">
+                                            <span class="form__placeholder">
+                                                <img class="mainInfo__call" src="wwwroot/img/WebsiteB&W.svg"
+                                                    id="webImg" />وب سایت</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 ">
+                                        <div class="form__item mb-3" id="socialFormItem">
+                                            <input type="text" class="form__input" name="firstName" id="firstName"
+                                                required spellcheck="false">
+                                            <span class="form__placeholder"><img class="mainInfo__call"
+                                                    src="wwwroot/img/sms.svg" id="emailImg" />ایمیل</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-end">
+                                            <input type="submit"
+                                                class="dashboard__btn dashboard__btn--green dashboard__btn--hover m-0"
+                                                value="ثبت تغییرات" id="formBtnSubmit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">...</div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">...</div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="wwwroot/js/script-dashboard.js"></script>
+    <script>
+
+        //form validation (main info page)
+        let formItemWrapperEl = document.querySelectorAll("#formItemWrapper");
+        let formInputElPub = document.querySelectorAll(".form__input");
+        let formInputSubmit = document.querySelector("#formBtnSubmit");
+        formInputSubmit.addEventListener("click", function (e) {
+            e.preventDefault();
+            formItemWrapperEl.forEach(element => {
+                let formInputEl = element.querySelector(".form__input");
+                let formMessageEl = element.querySelector("#formMessage");
+                let formMessageEmpEl = element.querySelector("#formMessageEmp");
+                if (formInputEl.value == "") {
+                    formMessageEl.style.display = "none";
+                    formMessageEmpEl.style.display = "block";
+                    formInputEl.style.borderColor = "#ed4b9e";
+                }
+            });
+        });
+        formItemWrapperEl.forEach(element => {
+            let formInputEl = element.querySelector(".form__input");
+            let formMessageEl = element.querySelector("#formMessage");
+            let formMessageEmpEl = element.querySelector("#formMessageEmp");
+            formInputEl.addEventListener("keydown", function () {
+                this.style.borderColor = "#b8b8b9";
+                formMessageEmpEl.style.display = "none";
+            })
+        })
+
+        // social icon (main info page)
+        function changePic(picId, picSrc) {
+            picId.src = "wwwroot/img/" + picSrc;
+        }
+
+
+    </script>
+</body>
+
+</html>

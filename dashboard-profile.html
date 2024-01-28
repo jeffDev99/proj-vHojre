@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./wwwroot/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./wwwroot/css/normalize.css">
+    <link rel="stylesheet" href="./wwwroot/css/styleDashboard.css">
+    <title>پنل کاربری</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row outer-container">
+            <!--side bar-->
+            <aside class="col-12 col-lg-2 bg-red text-white ">
+                <div class="dashboard-aside">
+                    <div
+                        class="dashboard-aside-header d-flex justify-content-between justify-content-lg-center px-4 py-3">
+                        <img src="wwwroot/img/menu-1.svg" class="dashboard-aside-header__open-icon pe-3 d-lg-none">
+                        <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                        <span>
+                        </span>
+                    </div>
+                    <nav class="dashboard-aside-nav">
+                        <div
+                            class="dashboard-aside-header-responsive d-flex align-items-center d-lg-none justify-content-between px-4 py-3">
+                            <img src="wwwroot/img/close.svg"
+                                class="dashboard-aside-header-responsive__close-btn pe-3 d-lg-none">
+                            <img src="./wwwroot/img/logoHorizontalWhite.svg" class="dashboard-aside-header__img">
+                            <span></span>
+                        </div>
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/category-2.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">داشبورد</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop-add.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">ساخت حجره جدید</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/shop.svg" class="icon-image">
+                                <li class="item-dashboard">مدیریت حجره</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/chart-2.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">آمار و گزارشات</li>
+                            </a>
+
+                            <a href="#" class="linkToPage px-4 py-3 linkToPage--acitve"><img
+                                    src="wwwroot/img/Profile.svg" class="icon-image">
+                                <li class="item-dashboard item-dashboard-5">حساب کاربری</li>
+                            </a>
+                        </ul>
+                        <hr class="style-line">
+                        <ul class="dashboard-aside-list m-0 p-0 mb-5 ">
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/headphone.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">پشتیبانی</li>
+                            </a>
+                            <a href="#" class="linkToPage px-4 py-3"><img src="wwwroot/img/logout.svg"
+                                    class="icon-image">
+                                <li class="item-dashboard">خروج</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <!--main-->
+            <div class="col-12 col-lg-10 bg-gray">
+                <!--main header-->
+                <header class="row main-header">
+                    <div class="col-12 col-md-8"></div>
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="main-header__left d-flex align-items-center flex-row-reverse justify-content-evenly">
+                            <figure class="main-header__avatar m-0">
+                                <img src="./wwwroot/img/avatar.png" alt="main header icon"
+                                    class="main-header__icon-img header-image">
+                            </figure>
+                            <span class="main-header__tel">+98 912 345789</span>
+                            <figure class="main-header__icon-wrapper m-0">
+                                <img src="./wwwroot/img/notification.svg" class="main-header__icon"
+                                    alt="notification icon">
+                            </figure>
+                            <figure class="main-header__icon-wrapper main-header-space m-0">
+                                <img src="./wwwroot/img/search-normal-1.svg" class="main-header__icon"
+                                    alt="search icon">
+                            </figure>
+                        </div>
+                    </div>
+                </header>
+                <!--main body-->
+                <main class="row main-body">
+                    <!--select avatar-->
+                    <section class="section-box  d-flex flex-wrap justify-content-center justify-content-lg-between">
+                        <h2 class="sec-title flex-grow-1">انتخاب تصویر پروفایل</h2>
+                        <figure class="select-avatar__img-wrapper ms-4">
+                            <img src="./wwwroot/img/avatar@3x.png" alt="select avatar icon" class="select-avatar__img">
+                        </figure>
+                        <div class="select-avatar-pick flex-grow-1">
+                            <h3 class="select-avatar-pick__title mt-3 mt-md-0">تصاویر پیش فرض</h3>
+                            <ul class="select-avatar-pick__list list-cus d-flex ">
+                                <li class="select-avatar-pick__item select-avatar-pick__item--active">
+                                    <img src="wwwroot/img/avatar.png" alt="avatar 1">
+                                </li>
+                                <li class="select-avatar-pick__item">
+                                    <img src="wwwroot/img/avatar-1.png" alt="avatar 2">
+                                </li>
+                                <li class="select-avatar-pick__item">
+                                    <img src="wwwroot/img/avatar-2.png" alt="avatar 3">
+                                </li>
+                                <li class="select-avatar-pick__item">
+                                    <img src="wwwroot/img/avatar-3.png" alt="avatar 4">
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                <label
+                                    class="d-flex d-lg-inline-flex align-items-center justify-content-center dashboard__btn dashboard__btn--blue dashboard__btn--hover  my-2 flex-grow-1 flex-md-grow-0 ">
+                                    <img src="wwwroot/img/vuesax-linear-gallery-import.svg" alt="upload-icon"
+                                        class="mx-1">
+                                    آپلود عکس <input type="file" class="d-none" required>
+                                </label>
+                                <button type="button" id="btnRemoveProfile"
+                                    class=" dashboard__btn dashboard__btn--red dashboard__btn--hover me-md-3 flex-grow-1 flex-md-grow-0 px-3">
+                                    <img src="wwwroot/img/edit.svg" alt="edit-icon" class="img-white">
+                                    حذف عکس پروفایل
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!--personal info-->
+                    <section class="section-box">
+                        <h2 class="sec-title">مشخصات فردی</h2>
+                        <form action="" method="POST" class="row form">
+                            <div class="col-12 col-md-4 px-0 ps-md-5">
+                                <div class="form__item mb-4">
+                                    <input type="text" class="form__input form-input-wt" name="firstName" id="firstName"
+                                        required spellcheck="false">
+                                    <span class="form__placeholder">نام</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 px-0 ps-md-5">
+                                <div class="form__item mb-4">
+                                    <input type="text" class="form__input form-input-wt" name="lastName" id="lastName"
+                                        required spellcheck="false">
+                                    <span class="form__placeholder">نام خانوادگی</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 px-0 ps-md-5">
+                                <div class="form__item mb-4">
+                                    <input type="email" class="form__input form-input-wt" name="email" id="email"
+                                        required spellcheck="false">
+                                    <span class="form__placeholder">ایمیل</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 px-0 ps-md-5">
+                                <div class="form__item mb-4">
+                                    <input type="date" class="form__input form__input-date form-input-wt"
+                                        name="birthday" id="birthday" required spellcheck="false">
+                                    <span class="form__placeholder">تاریخ تولد</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 px-0 ps-md-5">
+                                <div class="form__item mb-4">
+                                    <select id="gender" name="gender" class="form__input form-input-wt" required
+                                        spellcheck="false">
+                                        <option class="form-select-op" value="null">جنسیت</option>
+                                        <option value="male">مرد</option>
+                                        <option value="female">زن</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12  px-0 ps-md-5">
+                                <div class="form__item mb-4">
+                                    <input type="text" class="form__input form-address w-100" name="lastName"
+                                        id="address" required spellcheck="false">
+                                    <span class="form__placeholder">آدرس محل سکونت</span>
+                                </div>
+                            </div>
+                            <div class="col-12  px-0 ps-md-5">
+                                <div class="d-flex justify-content-end">
+                                    <input type="submit"
+                                        class="dashboard__btn dashboard__btn--green dashboard__btn--hover"
+                                        value="ثبت تغییرات">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="wwwroot/js/script-dashboard.js"></script>
+</body>
+
+</html>
